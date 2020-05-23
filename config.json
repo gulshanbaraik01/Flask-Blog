@@ -1,0 +1,20 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/codingcortex",
+    "prod_uri": "mysql://root:@localhost/codingcortex",
+    "fb_url": "https://facebook.com/codingcortex",
+    "tw_url": "https://twitter.com/codingcortex",
+    "git_url": "https://github.com/codingcortex",
+    "blog_name": "Coding Cortex",
+    "gmail_user": "gbrnc28@gmail.com",
+    "gmail_pass": "9608808277",
+    "about_text": "Hello This is Gulshan Baraik from NIT Jamshedpur, Creating the blog website for Technology Lovers",
+    "no_of_posts": 2,
+    "login_image": "hqdefault.jpg",
+    "admin_name": "gulshan@123",
+    "admin_pass": "gulshan##098",
+    "upload_location": "C:\\Users\\Gulshan\\PycharmProjects\\Flask-Tut"
+  }
+}
