@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session, redirect
+from flask import Flask, render_template, request, session, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
 from datetime import datetime
@@ -52,6 +52,8 @@ class Posts(db.Model):
 
 @app.route("/")
 def home():
+    flash("Welcome To Coding Cortex", "success")
+    flash("Enjoy by exploring the Blog posts", "primary")
     posts = Posts.query.filter_by().all()
     last = math.ceil(len(posts) / int(params["no_of_posts"]))
     # [0:params["no_of_posts"]]
@@ -101,6 +103,7 @@ def contact():
                           recipients=[params['gmail_user']],
                           body=message + "\n" + phone
                           )
+        flash("Thanks for your submission, We will get back to you soon !!", "success")
 
     return render_template("contact.html", params=params)
 
